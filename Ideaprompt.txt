@@ -1,3 +1,4 @@
+Using : cryptotalkapp 
 Copy and paste this directly into Lovable:
 
 ---
