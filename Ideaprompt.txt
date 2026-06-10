@@ -1,0 +1,679 @@
+Copy and paste this directly into Lovable:
+
+---
+
+# HackathonWin – AI-Powered Hackathon Operating System
+
+Build a production-ready SaaS web application called **HackathonWin** using **React, TypeScript, Tailwind CSS, Shadcn UI, Supabase Authentication, Supabase Database, Supabase Realtime, Supabase Storage, and Edge Functions**.
+
+The application should look modern, futuristic, premium, and designed specifically for hackathons. Use glassmorphism, smooth animations, gradients, dark/light mode, responsive design, and professional dashboards.
+
+## Core Concept
+
+HackathonWin is an AI-powered collaborative workspace where up to 5 team members can work simultaneously to build and manage a hackathon project from idea to final submission.
+
+The platform should combine:
+
+* Team collaboration
+* Project management
+* AI idea generation
+* AI code generation
+* AI app generation
+* AI pitch generation
+* AI documentation generation
+* AI judge simulator
+* Real-time communication
+* File sharing
+* Progress tracking
+
+---
+
+# Authentication System
+
+Create complete authentication using Supabase Auth.
+
+Features:
+
+* Sign Up
+* Sign In
+* Forgot Password
+* Reset Password
+* Email Verification
+* Google Login
+* GitHub Login
+* User Profile
+* Avatar Upload
+* Edit Profile
+
+Store user profiles in Supabase.
+
+Fields:
+
+```text
+id
+name
+email
+avatar
+bio
+college
+skills
+created_at
+```
+
+---
+
+# Team System
+
+Users can:
+
+* Create Team
+* Join Team
+* Leave Team
+* Invite Members
+* Generate Invite Code
+* Share Invite Link
+
+Each team should have:
+
+```text
+id
+name
+description
+team_code
+owner_id
+created_at
+```
+
+Maximum team size:
+
+```text
+5 Members
+```
+
+Roles:
+
+```text
+Frontend Developer
+Backend Developer
+UI/UX Designer
+Project Manager
+Presentation Lead
+```
+
+Allow custom roles.
+
+---
+
+# Team Dashboard
+
+Create a professional dashboard.
+
+Sections:
+
+### Team Overview
+
+Show:
+
+* Team Name
+* Members
+* Active Users
+* Progress
+* Remaining Time
+* Project Status
+
+---
+
+### Activity Feed
+
+Live updates:
+
+```text
+Karan created task
+Siddhi uploaded file
+Ishwari completed task
+```
+
+Realtime updates using Supabase Realtime.
+
+---
+
+# Realtime Team Collaboration
+
+Every team member should see updates instantly.
+
+Implement:
+
+* Realtime messages
+* Realtime tasks
+* Realtime notes
+* Realtime files
+* Realtime project status
+
+Use Supabase Realtime subscriptions.
+
+---
+
+# Team Chat
+
+Build Slack-style team chat.
+
+Features:
+
+* Send Message
+* Edit Message
+* Delete Message
+* Reactions
+* Mentions
+* Search Messages
+* Emoji Picker
+
+Store messages in Supabase.
+
+---
+
+# Shared Notes
+
+Build collaborative notes system.
+
+Features:
+
+* Rich Text Editor
+* Auto Save
+* Version History
+* Realtime Sync
+* Team Notes
+
+Support:
+
+```text
+Headings
+Lists
+Code Blocks
+Links
+Tables
+Images
+```
+
+---
+
+# Kanban Task Board
+
+Create Trello-style board.
+
+Columns:
+
+```text
+Backlog
+To Do
+In Progress
+Testing
+Completed
+```
+
+Task fields:
+
+```text
+Title
+Description
+Assigned User
+Priority
+Due Date
+Status
+Tags
+Attachments
+```
+
+Drag and drop support.
+
+Realtime updates.
+
+---
+
+# Hackathon Timer
+
+Create hackathon countdown system.
+
+Show:
+
+* Total Time
+* Remaining Time
+* Days
+* Hours
+* Minutes
+* Seconds
+
+Visual progress circle.
+
+Auto warnings:
+
+```text
+24 Hours Left
+12 Hours Left
+1 Hour Left
+```
+
+---
+
+# File Sharing System
+
+Use Supabase Storage.
+
+Allow upload:
+
+```text
+Images
+PDF
+PPT
+ZIP
+Videos
+Documents
+```
+
+Features:
+
+* Upload
+* Download
+* Preview
+* Delete
+* Search
+
+---
+
+# AI Workspace
+
+Create a dedicated AI workspace.
+
+Tabs:
+
+```text
+Idea Generator
+Code Generator
+UI Generator
+Database Generator
+API Generator
+Pitch Generator
+Documentation Generator
+```
+
+---
+
+# AI Idea Generator
+
+Input:
+
+```text
+Theme
+Domain
+Problem
+Target Audience
+```
+
+Generate:
+
+* Problem Statement
+* Solution
+* Features
+* Tech Stack
+* Monetization
+* Future Scope
+
+Save outputs.
+
+---
+
+# AI Code Generator
+
+Allow users to describe an application.
+
+Example:
+
+```text
+Build a food delivery app
+```
+
+Generate:
+
+* React Code
+* HTML
+* CSS
+* JavaScript
+* Node.js
+* Express
+* Flutter
+* Firebase
+
+Create file explorer UI.
+
+Generated files should appear in a code workspace.
+
+---
+
+# AI App Generator
+
+Prompt:
+
+```text
+Create a Smart City Complaint App
+```
+
+Generate:
+
+### Project Structure
+
+```text
+Frontend
+Backend
+Database
+Authentication
+Deployment
+```
+
+Generate:
+
+* Folder structure
+* Screens
+* Components
+* APIs
+* Database schema
+
+Display professionally.
+
+---
+
+# AI UI Generator
+
+Generate:
+
+* Landing Pages
+* Dashboards
+* Mobile Screens
+* Admin Panels
+
+Show previews.
+
+Store generated designs.
+
+---
+
+# AI Database Generator
+
+Generate:
+
+```text
+SQL Schema
+ER Diagram
+Tables
+Relationships
+Indexes
+```
+
+Export SQL.
+
+---
+
+# AI API Generator
+
+Generate:
+
+```text
+REST APIs
+Routes
+Controllers
+Validation
+Authentication
+```
+
+Show API documentation.
+
+---
+
+# AI Pitch Deck Generator
+
+Generate:
+
+```text
+Problem
+Solution
+Architecture
+Features
+Technology
+Revenue Model
+Future Scope
+```
+
+Export to PDF.
+
+---
+
+# AI Documentation Generator
+
+Generate:
+
+```text
+README
+Installation
+API Docs
+User Guide
+Deployment Guide
+```
+
+Export as Markdown and PDF.
+
+---
+
+# AI Judge Simulator
+
+Create a virtual judge panel.
+
+Generate:
+
+* Technical Questions
+* Business Questions
+* Scaling Questions
+* Security Questions
+
+Allow mock interview mode.
+
+Score answers.
+
+Provide feedback.
+
+---
+
+# AI Team Role Assignment
+
+Input:
+
+```text
+Members
+Skills
+Experience
+```
+
+Generate recommended roles.
+
+---
+
+# Project Health Dashboard
+
+Calculate:
+
+```text
+Task Completion
+Code Progress
+Documentation Progress
+Presentation Progress
+```
+
+Display charts.
+
+Show:
+
+```text
+Winning Probability Score
+```
+
+Based on:
+
+* Completion
+* Activity
+* Documentation
+* Team Participation
+
+---
+
+# Analytics Dashboard
+
+Show:
+
+* Tasks Completed
+* Team Productivity
+* User Activity
+* Time Tracking
+* Files Uploaded
+
+Interactive charts.
+
+---
+
+# GitHub Integration
+
+Allow:
+
+* Connect GitHub
+* Create Repository
+* Commit Changes
+* Push Generated Code
+
+Store repository links.
+
+---
+
+# Presentation Workspace
+
+Create a PPT preparation area.
+
+Features:
+
+* Slides
+* Notes
+* Speaker View
+* AI Suggestions
+
+---
+
+# Demo Script Generator
+
+Generate complete hackathon presentation scripts.
+
+Sections:
+
+```text
+Introduction
+Problem
+Solution
+Demo
+Impact
+Future Scope
+```
+
+---
+
+# Emergency Mode
+
+When remaining time is less than 1 hour:
+
+Display emergency dashboard.
+
+Suggest:
+
+* MVP Features
+* Critical Fixes
+* Submission Checklist
+* PPT Completion
+
+---
+
+# Notifications
+
+Realtime notifications.
+
+Types:
+
+* Task Assigned
+* File Uploaded
+* Mentioned
+* Team Joined
+* AI Generation Complete
+
+---
+
+# Database Design
+
+Automatically create all required Supabase tables and relationships.
+
+Enable Row Level Security.
+
+Create policies so users only access their own teams.
+
+---
+
+# Admin Panel
+
+Admin can:
+
+* View Users
+* View Teams
+* Monitor Activity
+* Manage Storage
+* View Analytics
+
+---
+
+# UI Requirements
+
+Design should be world-class.
+
+Inspired by:
+
+* Notion
+* Linear
+* Slack
+* GitHub
+* Figma
+* Vercel
+
+Requirements:
+
+* Responsive
+* Mobile Friendly
+* Dark Mode
+* Light Mode
+* Animations
+* Glassmorphism
+* Loading Skeletons
+* Empty States
+* Error Handling
+
+---
+
+# Final Requirement
+
+Generate a fully working application with:
+
+* Complete database schema
+* Supabase integration
+* Realtime features
+* Authentication
+* Storage
+* Dashboards
+* AI modules placeholders and service architecture
+* Clean code
+* Production-ready structure
+* Proper folder organization
+* Reusable components
+* TypeScript types
+* Security best practices
+* Deployment-ready implementation
+
+Build the entire application end-to-end and automatically create all pages, components, routes, database tables, Supabase functions, and UI necessary for a complete HackathonWin platform.
